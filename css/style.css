@@ -55,6 +55,7 @@ header img {
 @media (min-width: 768px) {
         .navegacio-princial{
             flex-direction: row;
+
         }
     }
 
@@ -63,7 +64,8 @@ header img {
     text-decoration: none;
     font-size: 2rem;
     font-weight: 700;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1rem;
+    text-align: center;
 }
 
 .navegacio-princial a:hover {
