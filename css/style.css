@@ -4,7 +4,7 @@
     --primario: rgb(87, 158, 224);
     --secundario: rgb(87, 158, 224);
     --gris: #d2d7db;
-    --tamany-font: 16px;
+    --tamany-font: 1rem;
     --taronja: orange;
 
 }
@@ -32,21 +32,21 @@ header {
     background-color: var(--blanco);
     color: var(--oscuro);
     text-align: center;
-    font-size: 25px;
+    font-size: 2rem;
     display: flex;
     align-items: center;
-    padding: 10px 10px;
+    padding: 1rem 1rem;
 }
 
 header img {
-    width: 80px;
+    width: 7.5rem;
     height: auto;
     margin-right: auto;
 }
 
 .navegacio-princial{
     width: 75%;
-    margin: 0px auto;
+    margin: 0rem auto;
     display: flex;
     justify-content: space-around;
 }
@@ -72,7 +72,7 @@ header img {
     flex: 1;
     text-align: center;
     margin: 0;
-    padding-right: 70px;
+    padding-right: 10rem;
 }
 
 h2 {
