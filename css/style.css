@@ -148,6 +148,14 @@ nav {
     border: none;
 }
 
+a.boton-hero, 
+.boton-hero:link, 
+.boton-hero:visited,
+.boton-hero:hover,
+.boton-hero:active {
+    text-decoration: none;
+}
+
 @media (min-width: 768px) {
     .boton-hero {
             width: auto;
