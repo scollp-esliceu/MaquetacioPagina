@@ -102,3 +102,19 @@ p{
 nav {
     background-color: var(--primario);
 }
+
+/* Estils Hero */
+.hero {
+    background-image: url(img/hero-1024x768.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    display: flex;
+}
+
+.contenido-hero {
+    color: var(--blanco);
+    text-align: center;
+    margin: auto;
+    padding-bottom: 21rem;
+}
