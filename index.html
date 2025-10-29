@@ -11,24 +11,25 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <a href="index.html">
-            <img src="img/logo.png">
-        </a>
-        <h1 class="titol">Ginnet</h1>
-    </header>
-    <div class="gb-secundario">
-        <nav class="navegacio-princial">
-            <a href="index.html">Inici</a>
-            <a href="serveis.html">Serveis</a>
-            <a href="#contacte">Contacte</a>
-            <a href="login.html">Login</a>
+        <nav class="navegacio-principal">
+            <div class="gb-secundario">                
+                <a href="index.html" class="logoG"></a>
+            </div>
+            <div class="menu-centre">
+                <a href="index.html">Inici</a>
+                <a href="serveis.html">Serveis</a>
+                <a href="#contacte">Contacte</a>
+            </div>
+            <div class="menu-dreta">
+                <a href="login.html">Login</a>
+                <p>|</p>
+                <a href="signup">Sign Up</a>
+            </div>
         </nav>
-    </div>
 
     <section class="hero">
         <div class="contenido-hero">
-            <h2>Creació de pàgines web</h2>
+            <img src="img/GINNET.png" class="logo">
             <p>Crea la teva pàgina web sense saber programar</p>
             <a href="#contacte" class="boton-hero">Contactar</a>
         </div>
@@ -37,31 +38,49 @@
     </section>
 
     <main class="contenidor">
-        <h2 class="titolcontenidor">Que oferim?</h2>
         <div class="elmeucontingut">
-            <section class="contingut">
-                <h3>Plans</h3>
-                <div class="icone">
-                    <svg 
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="84"
-                        height="84"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="#000000"
-                        stroke-width="1"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        >
-                        <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
-                        <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" />
-                        <path d="M9 12l.01 0" />
-                        <path d="M13 12l2 0" />
-                        <path d="M9 16l.01 0" />
-                        <path d="M13 16l2 0" />
-                    </svg>
+
+            <section class="plans" id="plans">
+                <h3 class="plans-titol">Plans</h3>
+                
+                <div class="plans-container">
+                    <div class="plan">
+                        <h4>Inici</h4>
+                        <p class="preu">9.99€ / mes</p>
+                        <ul class="beneficis">
+                            <li>Accés limitat a contingut</li>
+                            <li>Suport bàsic</li>
+                            <li>Actualitzacions mensuals</li>
+                        </ul>
+                        <a href="#" class="boton2">Obtenir Inicial</a>
+                    </div>
+                    
+                    <div class="plan">
+                        <h4>Avançat</h4>
+                        <p class="preu">29.99€ / mes</p>
+                        <ul class="beneficis">
+                            <li>Accés complet a contingut</li>
+                            <li>Supoort prioritari</li>
+                            <li>Actualitzacions setmanals</li>
+                            <li>Analytics avançat</li>
+                        </ul>
+                        <a href="#" class="boton2">Obtenir Avançat</a>
+                    </div>
+
+                    <div class="plan">
+                        <h4>Suprem</h4>
+                        <p class="preu">59.99€ / mes</p>
+                        <ul class="beneficis">
+                            <li>Totes les funcions d'Avançat</li>
+                            <li>Suport 24/7</li>
+                            <li>Consultoria personalitzada</li>
+                            <li>Backup automàtic</li>
+                            <li>Dominis i hosting inclosos</li>
+                        </ul>
+                        <a href="#" class="boton2">Obtenir Suprem</a>
+                    </div>
+                    
                 </div>
-                <p>Tenim diferents plans adaptats a les necessitats de cada empresa.</p>
             </section>
             <section class="contingut">
                 <h3>Host</h3>
@@ -146,7 +165,7 @@
         <div class="footer-section">
         <h4>Enllaços</h4>
         <ul>
-            <li><a href="plans.html">Plans</a></li>
+            <li><a href="#plans">Plans</a></li>
             <li><a href="host.html">Host</a></li>
             <li><a href="resenyes.html">Ressenyes</a></li>
         </ul>

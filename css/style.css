@@ -6,28 +6,18 @@
     --gris: #d2d7db;
     --tamany-font: 1rem;
     --taronja: orange;
-
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    font-size: 62.5%;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-*, *::before, *::after {
-    box-sizing: inherit;
+*, *::before, *::after{ 
+    margin:0; 
+    padding:0; 
+    box-sizing: border-box; 
 }
 
 body {
     font-size: var(--tamany-font);
     font-family: oswald, sans-serif;
 }
-
 
 header {
     background-color: var(--blanco);
@@ -39,39 +29,86 @@ header {
     padding: 1rem 1rem;
 }
 
-header img {
-    width: 7.5rem;
-    height: auto;
-    margin-right: auto;
+.navegacio-principal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 1rem 2rem;
 }
 
-.navegacio-princial{
-    width: 75%;
-    margin: 0rem auto;
+.menu-centre{
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    justify-content: space-around;
-    flex-direction: column;
+    gap: 5rem;
+}
+
+.gb-secundario{
+    margin-right: 2rem;
+}
+
+.menu-centre a:hover {
+    color: var(--taronja);
+}
+
+.menu-dreta{
+    display: flex;
+    gap: 1rem;
+}
+
+.menu-dreta a{
+    color: var(--gris);
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.menu-dreta a:hover{
+    color: var(--taronja);
+}
+
+.menu-dreta p{
+    color: var(--gris);
 }
 
 @media (min-width: 768px) {
-        .navegacio-princial{
+        .navegacio-principal{
             flex-direction: row;
 
         }
     }
 
-.navegacio-princial a {
+.menu-centre a {
     color: var(--gris);
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
     padding: 1rem;
     text-align: center;
+    display: flex;
+    gap: 2rem;
 }
 
-.navegacio-princial a:hover {
-    color: var(--taronja);
+.logo {
+    width: 40rem;
 }
+
+.logoG{
+    background-image: url(../img/G-blanca.png);
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+}
+
+.logoG:hover{
+    background-image: url(../img/G-naranja.png);
+}
+
 .gb-secundario {
     background-color: var(--primario);
 }
@@ -107,7 +144,7 @@ nav {
 .hero {
     background-image: url(img/hero-768x768.png);
     background-size: cover;
-    height: 45rem;
+    height: 102rem;
     display: flex;
     position: relative;
 }
@@ -131,7 +168,6 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-bottom: 10rem;
 }
 
 .boton-hero {
@@ -168,10 +204,114 @@ nav {
     padding: 1rem 1rem 1rem 1rem;
 }
 
-@media (min-width: 768px) {
-    .elmeucontingut {
-        flex-direction: row;
-    }
+.plans {
+    text-align: center;
+    margin: 5rem auto;
+    width: 90%;
+    max-width: 120rem;
+    border-radius: 3rem;
+    border: 0.2rem transparent solid;
+    background: linear-gradient(145deg, #f5f7fa, #e8ebf0);
+    padding: 3rem 2rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
+    height: 75rem;
+}
+
+.plans-titol{
+    font-size: 5rem;
+    color: var(--taronja);
+    margin-bottom: 4rem;
+    letter-spacing: 0.3rem;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 3rem;
+    flex-wrap: wrap;
+
+}
+
+.plan {
+    background: linear-gradient(135deg, var(--blanco), #f9f9f9);
+    border: 0.2rem solid var(--gris);
+    border-radius: 2.5rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.12);
+    padding: 3rem 2rem;
+    width: 100%;
+    max-width: 32rem;
+    min-height: 55rem;
+    flex: 1 1 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan:hover{
+    transform: translateY(-0.5rem) scale(1.02);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    background: linear-gradient(145deg, var(--blanco), #e0f0ff);
+}
+
+.plan h4 {
+    font-size: 3rem;
+    color: var(--taronja);
+    margin-bottom: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.plan .preu {
+    font-size: 3rem;
+    color: var(--primario);
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.plan .beneficis{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+    text-align: left;
+    width: 100%;
+    
+}
+
+.plan .beneficis li{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 0.5rem;
+}
+
+.plan .beneficis li::before{
+    content: "✔";
+    color: var(--primario);
+}
+
+.plan a{
+    text-decoration: none;
+}
+
+.plan .boton2 {
+    margin-top: auto;
+    background: var(--primario);
+    padding: 1.5rem 3rem;
+    font-size: 2rem;
+    border-radius: 1.5rem;
+    width: 80%;
+    transition: all 0.3s ease;
+}
+
+.plan .boton2:hover{
+    background: var(--taronja);
+    color: var(--oscuro);
+    transform: scale(1.05);
 }
 
 .contenidor {
@@ -190,12 +330,6 @@ nav {
     margin: 1rem 1rem 1rem 1rem;
 }
 
-.titolcontenidor {
-    font-size: 7rem;
-    color: var(--secundario);
-    margin-bottom: 4rem;
-}
-
 .contingut h3{
     font-weight: normal;
     color: var(--primario);
@@ -207,7 +341,6 @@ nav {
     display: block;
     width: 100%;
     max-width: 40rem;
-    line-height: 1.5;
     word-wrap: break-word;
     font-size: 2.5rem;
     line-height: 2;
@@ -275,7 +408,6 @@ textarea {
     border: 0.1rem solid var(--gris);
     border-radius: 0.8rem;
     font-size: 1.8rem;
-    font-family: inherit;
     transition: all 0.3s ease;
     background-color: #fafafa;
 }
@@ -312,6 +444,7 @@ label {
 
 .boton2:hover {
     background-color: var(--taronja);
+    color: var(--oscuro);
     transform: scale(1.05);
 }
 
@@ -333,7 +466,6 @@ label {
     background-color: #03053a;
     color: white;
     padding: 40px 20px 20px 20px;
-    font-family: sans-serif;
 }
 
 .footer-container {
