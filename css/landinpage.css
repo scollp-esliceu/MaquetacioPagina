@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+html, body {
+    height: 100%;
+}
+
+.hero {
+    position: relative;
+    background: linear-gradient(135deg, #d9f1ff 0%, #118dbe 100%);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.hero::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.hero-titol {
+    position: relative;
+    z-index: 2;
+    max-width: 90%;
+}
+
+.hero-titol img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.hero-titol p {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero-boto {
+    position: relative;
+    z-index: 3;
+}
+
+.hero-boto a {
+    display: inline-block;
+    padding: 12px 32px;
+    background-color:  rgba(104, 93, 93, 0.2);
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-boto a:hover {
+    background-color: rgba(70, 68, 68, 0.4);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+
+    .hero-titol p {
+        font-size: 1.2rem;
+    }
+
+    .hero-boto a {
+        font-size: 1rem;
+        padding: 10px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-titol img {
+        width: 80%;
+    }
+
+    .hero-titol p {
+        font-size: 1rem;
+    }
+
+    .hero-boto a {
+        font-size: 0.9rem;
+        padding: 8px 20px;
+    }
+}
