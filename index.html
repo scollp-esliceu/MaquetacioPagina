@@ -1,21 +1,253 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ginnet</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/landinpage.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+        <nav class="navegacio-principal">
+            <div class="gb-secundario">                
+                <a href="home.html" class="logoG"></a>
+            </div>
+            <div class="menu-centre">
+                <a href="home.html">Inici</a>
+                <a href="serveis.html">Serveis</a>
+                <a href="#contacte">Contacte</a>
+            </div>
+            <div class="menu-dreta">
+                <a href="login.html">Login</a>
+                <p>|</p>
+                <a href="signup.html">Sign Up</a>
+            </div>
+        </nav>
+
     <section class="hero">
-        <div class="hero-titol">
-            <img src="/img/GINNET.png" alt="" width="500" height="auto">
-            <p>Entra al món digital amb la teva empresa ya!</p>
-        </div>
-        <div class="hero-boto">
-            <a href="home.html">Comença ara</a>
+        <div class="contenido-hero">
+            <img src="img/GINNET.png" class="logo">
+            <p>Crea la teva pàgina web sense saber programar</p>
+            <a href="#contacte" class="boton-hero">Comença ara</a>
         </div>
     </section>
+
+    <section class="sobre-nosaltres">
+        <div class="contenedor-sobre">
+            <div class="text-sobre">
+                <h2>Sobre nosaltres</h2>
+                <p>
+                    A <strong>Ginnet</strong> creim que cada empresa mereix una presència difital
+                    potent, clara i moderna. Som un equip jove i apassionat pel desenvoulupament web,
+                    amb l'objectiu de fer que la tecnologia sigui accesible i útil per a tothom.
+                </p>
+
+                <div class="valors">
+                    <div class="valor">
+                        <img src="img/idea.png" alt="Innovació">
+                        <h3>Innovació constant</h3>
+                        <p>
+                            Experimentam i milloram cada projecte amb idees noves i tecnologies actuals.
+                        </p>
+                    </div>
+                    <div class="valor">
+                        <img src="img/handshake.png" alt="Tracte proper">
+                        <h3>Tracte proper</h3>
+                        <p>
+                            Escoltam el client i adaptem cada solució a les seves necessitats reals.
+                        </p>
+                    </div>
+                    <div class="valor">
+                        <img src="img/rocket.png" alt="Resultats"">
+                        <h3>Resultats reals</h3>
+                        <p>
+                            Dissenys que funcionen i webs que impulsen negocis.
+                        </p>
+                    </div>
+                </div>
+
+            <a href="#contacte" class="boto-sobre">Coneix-nos millor</a>
+
+            </div>
+            <div class="sobre-imatge">
+                <img src="img/nosaltres.png" alt="Equip de l'empresa">
+            </div>
+        </div>
+    </section>
+
+    <main class="contenidor">
+        <div class="elmeucontingut">
+
+            <section class="plans" id="plans">
+                <h3 class="plans-titol">Plans</h3>
+                
+                <div class="plans-container">
+                    <div class="plan">
+                        <h4>Inici</h4>
+                        <p class="preu">9.99€ / mes</p>
+                        <ul class="beneficis">
+                            <li>Accés limitat a contingut</li>
+                            <li>Suport bàsic</li>
+                            <li>Actualitzacions mensuals</li>
+                        </ul>
+                        <a href="#" class="boton2">Obtenir Inicial</a>
+                    </div>
+                    
+                    <div class="plantop">
+                        <span class="badge">RECOMANAT</span>
+                        <h4>Avançat</h4>
+                        <p class="preu">29.99€ / mes</p>
+                        <ul class="beneficis">
+                            <li>Accés complet a contingut</li>
+                            <li>Supoort prioritari</li>
+                            <li>Actualitzacions setmanals</li>
+                            <li>Analytics avançat</li>
+                        </ul>
+                        <a href="#" class="boton2">Obtenir Avançat</a>
+                    </div>
+
+                    <div class="plan">
+                        <h4>Suprem</h4>
+                        <p class="preu">59.99€ / mes</p>
+                        <ul class="beneficis">
+                            <li>Totes les funcions d'Avançat</li>
+                            <li>Suport 24/7</li>
+                            <li>Consultoria personalitzada</li>
+                            <li>Backup automàtic</li>
+                            <li>Dominis i hosting inclosos</li>
+                        </ul>
+                        <a href="#" class="boton2">Obtenir Suprem</a>
+                    </div>
+                    <img src="img/home1.png" alt="Flotant" class="img-flotant">
+                </div>
+            </section>
+
+            <section class="hosts">
+                <h2 class="host-titol">Els nostres Hosts</h2>
+                <div class="hosts-contenidor">
+                    <div class="host">
+                        <h3>Host Bàsic</h3>
+                        <ul class="host-specs">
+                            <li>1 CPU</li>
+                            <li>2GB RAM</li>
+                            <li>50GB SSD</li>
+                            <li>Trànsit il·limitat</li>
+                        </ul>
+                        <a href="#" class="boton2">Contracta ara</a>
+                    </div>
+
+                    <div class="host host-recomanat">
+                        <span class="badge-host">RECOMANAT</span>
+                        <h3>Host Premium</h3>
+                        <ul class="host-specs">
+                            <li>4 CPU</li>
+                            <li>8 GB RAM</li>
+                            <li>200 GB RAM</li>
+                            <li>Trànsit il·limitat</li>
+                        </ul>
+                        <a href="#" class="boton2">Contracta ara</a>
+                    </div>
+
+                    <div class="host">
+                        <h3>Host Empresarial</h3>
+                        <ul class="host-specs">
+                            <li>8 CPU</li>
+                            <li>16 GB RAM</li>
+                            <li>500 GB SSD</li>
+                            <li>Trànsit il·limitat</li>
+                        </ul>
+                        <a href="#" class="boton2">Contracta ara</a>
+                    </div>
+
+                    <div class="host">
+                        <h3>Host Ultra</h3>
+                        <ul class="host-specs">
+                            <li>16 CPU</li>
+                            <li>64 GB RAM</li>
+                            <li>2 TB SSD</li>
+                            <li>Trànsit il·limitat + CDN</li>
+                        </ul>
+                        <a href="#" class="boton2">Contracta ara</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contingut">
+                <h3>Ressenyes</h3>
+                <div class="icone">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="84"
+                        height="84"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-width="1"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        >
+                        <path d="M8 9h8" />
+                        <path d="M8 13h6" />
+                        <path d="M9 18h-3a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-3l-3 3l-3 -3z" />
+                    </svg>
+                </div>
+                <p>Els nostres clients valoren la rapidesa i qualitat del nostre servei.</p>
+            </section>
+        </div>
+    </main>
+    <section id="contacte" class="contacte">
+        <h3>Contacte</h3>
+        <form action="" class="formulari">
+            <fieldset>
+                <legend>Contacta'ns enviat les teves dades</legend>
+                <div class="nom">
+                <label for="nom">Nom: </label>
+                <input type="text" name="nom" id="nom">
+                </div>
+                <div class="telefon">
+                <label for="telefon">Telèfon: </label>
+                <input type="tel" name="telefon" id="telefon">
+                </div>
+                <div class="correu">
+                    <label for="correu">Correu: </label>
+                    <input type="email" name="correu" id="correu">
+                </div>
+                <div class="missatge">
+                    <label for="missatge">Missatge: </label>
+                    <textarea name="missatge" cols="30" rows="10" id="missatge"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar" class="boton2">
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+        <h4>Ginnet</h4>
+        <p>Programació i webs per digitalitzar empreses.</p>
+        </div>
+        <div class="footer-section">
+        <h4>Enllaços</h4>
+        <ul>
+            <li><a href="#plans">Plans</a></li>
+            <li><a href="host.html">Host</a></li>
+            <li><a href="resenyes.html">Ressenyes</a></li>
+        </ul>
+        </div>
+        <div class="footer-section">
+        <h4>Contacte</h4>
+        <p>Email: info@ginnet.com</p>
+        <p>Tel: +34 123 456 789</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Ginnet. Tots els drets reservats.</p>
+    </div>
+</footer>
 </body>
 </html>

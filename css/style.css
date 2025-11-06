@@ -465,6 +465,7 @@ nav {
     letter-spacing: 0.1rem;
     text-transform: uppercase;
     box-shadow: 0 0.3rem 0.8rem rgba(0,0,0,0.2);
+    animation: pulse 2s ease-in-out infinite;
 }
 
 .plantop:hover {

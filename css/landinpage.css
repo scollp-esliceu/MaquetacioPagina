@@ -110,3 +110,24 @@ html, body {
         padding: 8px 20px;
     }
 }
+
+.text {
+    font-size: 0.9rem;
+}
+
+.text1, .text3, .text5 {
+    background-color: aqua;
+}
+
+.text1, .text2 {
+    height: 4rem;
+}
+
+.text-columnes {
+    display: flex;
+    margin-top: 0 auto;
+}
+
+.text-columnes div {
+    padding: 1rem;
+}
