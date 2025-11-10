@@ -2,6 +2,7 @@
     --blanco: white;
     --oscuro: #03053a;
     --primario: rgb(87, 158, 224);
+    --primario-transparente: rgba(87, 158, 224, 0.8);
     --secundario: rgb(87, 158, 224);
     --gris: #d2d7db;
     --tamany-font: 1rem;
@@ -21,11 +22,10 @@ html{
 body {
     font-size: var(--tamany-font);
     font-family: oswald, sans-serif;
-    padding-top: 6rem;
 }
 
 header {
-    background-color: var(--blanco);
+    background-color: var(--primario);
     color: var(--oscuro);
     text-align: center;
     font-size: 2rem;
@@ -164,7 +164,7 @@ header {
 }
 
 .gb-secundario {
-    background-color: var(--primario);
+    background-color: var(--primario-transparente);
 }
 
 .titol {
@@ -188,7 +188,7 @@ p{
 }
 
 nav {
-    background-color: var(--primario);
+    background-color: var(--primario-transparente);
 }
 
 /* Estils Hero */
@@ -394,7 +394,22 @@ nav {
         padding: 3rem 2rem;
         border-radius: 3rem;
         margin-bottom: 10rem;
-        height: 80rem;
+        max-width: 60rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .plans {
+        padding: 4rem 3rem;
+        border-radius: 4rem;
+        max-width: 100rem;
+        height: 90rem;
+    }
+    .plans-container {
+        display: flex;
+        flex-direction: row;
+        max-width: auto;
+        height: 10rem;
     }
 }
 
@@ -411,7 +426,6 @@ nav {
     align-items: stretch;
     gap: 3rem;
     flex-wrap: wrap;
-
 }
 
 .plan {
